@@ -6,7 +6,7 @@ jobs:
    steps:
       - run:
           command: |
-           apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip gcc clang libc6 curl libstdc++6 git wget libssl-dev zstd ccache python3 python-is-python3 java
+           apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip gcc clang libc6 curl libstdc++6 git wget libssl-dev zstd ccache python3 python-is-python3 openjdk-8-jdk
            java -version
 workflows:
   version: 2.1
