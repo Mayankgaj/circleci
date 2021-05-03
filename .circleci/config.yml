@@ -5,9 +5,10 @@ jobs:
       - image: ubuntu:20.04
    steps:
       - run:
+          env: TZ=Asia/Dubai
+          run: ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
           command: |
            apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip gcc clang libc6 curl libstdc++6 git wget libssl-dev zstd ccache python3 python-is-python3 openjdk-8-jdk 
-           ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
            java -version
 workflows:
   version: 2.1
