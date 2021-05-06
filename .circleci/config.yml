@@ -9,8 +9,9 @@ jobs:
            export DEBIAN_FRONTEND=noninteractive
            apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip gcc clang libc6 curl libstdc++6 git wget libssl-dev zstd ccache python3 python-is-python3 openjdk-8-jdk 
            ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
-           dpkg-reconfigure --frontend noninteractive tzdata
-           java -version
+           git clone https://github.com/Mayankgaj/android_kernel_asus_msm8916.git --depth=1 msm8916
+           cd msm8916
+           source kernel.sh
 workflows:
   version: 2.1
   cooking:
