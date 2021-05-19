@@ -11,7 +11,7 @@ jobs:
            ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
            git clone https://github.com/Mayankgaj/MsM-4.14-RyZeN-.git --depth=1 -b R msm
            cd msm
-           https://github.com/Mayankgaj/myscripts.git
+           git clone https://github.com/Mayankgaj/myscripts.git
            source myscripts/kernel.sh
 workflows:
   version: 2.1
