@@ -11,7 +11,8 @@ jobs:
            ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
            git clone https://github.com/Neternels/android_kernel_xiaomi_laurel_sprout.git --depth=1 msm
            cd msm
-           source kernel.sh
+           git clone https://github.com/Mayankgaj/myscripts.git --depth=1
+           source myscripts/kernel1.sh
 workflows:
   version: 2.1
   cooking:
