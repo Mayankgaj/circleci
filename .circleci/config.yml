@@ -16,6 +16,7 @@ jobs:
            git clone https://github.com/Neternels/SURYA_kernel.git -b StromBreaker_main  --depth=1 msm
            cd msm
            source kramel.sh
+          no_output_timeout: 30m
 workflows:
   version: 2.1
   cooking:
