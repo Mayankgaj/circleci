@@ -10,10 +10,7 @@ jobs:
            pacman -Syu --needed --noconfirm wget base-devel xmlto inetutils bc cpio python-sphinx python-sphinx_rtd_theme graphviz imagemagick git python2 python zip unzip ccache dpkg
            wget http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/libtinfo6_6.2+20201114-2build1_amd64.deb -O libtinfo6.deb && dpkg-deb -R libtinfo6.deb libtinfo && cp libtinfo/lib/x86_64-linux-gnu/libtinfo.so.6.2 /usr/lib/libtinfo.so.6
            ccache -M 10G
-           export DEBIAN_FRONTEND=noninteractive
-           apt-get -y update && apt-get -y upgrade && apt-get -y install bc build-essential zip gcc clang libc6 curl libstdc++6 git wget libssl-dev zstd ccache openjdk-8-jdk python python2 python3 cpio python3-pip tzdata
-           ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
-           git clone https://github.com/Neternels/SURYA_kernel.git -b StromBreaker_main  --depth=1 msm
+           git clone https://github.com/Neternels/Optimus_Drunk_Phoenix.git -b Redcliff_R  --depth=1 msm
            cd msm
            source kramel.sh
           no_output_timeout: 30m
