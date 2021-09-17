@@ -4,7 +4,6 @@ jobs:
    docker:
       - image: archlinux:base-devel
    resource_class: medium
-   parallelism: 4
    steps:
       - run:
           command: |
